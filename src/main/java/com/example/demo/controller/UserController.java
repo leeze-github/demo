@@ -14,7 +14,7 @@ public class UserController {
     @Autowired
     UserService service;
 
-    @RequestMapping(value = "/getUserItem", method = RequestMethod.GET)
+        @RequestMapping(value = "/getUserItem", method = RequestMethod.GET)
     public String getUserItem() {
         User user = service.getUserInfo();
         return new Gson().toJson(user);
